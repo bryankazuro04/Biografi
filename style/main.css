@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(197, 184, 161, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: antiquewhite;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Andada Pro", serif;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 99;
+}
+
+nav {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.25rem;
+}
+
+.brand {
+  font-family: "Style Script", cursive;
+}
+
+main {
+  padding-top: 7%;
+  height: fit-content;
+}
+
+.jumbotron {
+  padding: 0 15rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+}
+
+.jumbotron h2 {
+  font-weight: lighter;
+  font-size: 80px;
+  font-family: "Style Script", cursive;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.jumbotron h2:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+
+.about,
+.pict {
+  margin-bottom: 3rem;
+}
+
+.pict img {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
