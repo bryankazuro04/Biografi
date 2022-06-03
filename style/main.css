@@ -52,15 +52,11 @@ a {
 }
 
 .navbar {
+  padding: 1em 5em;
   position: fixed;
   width: 100%;
   background: linear-gradient(0deg, transparent, rgba(240, 229, 80, 0.4) 90%);
   z-index: 99;
-}
-
-nav {
-  padding: 1em 5em;
-  font-size: 1.25rem;
 }
 
 .brand {
