@@ -1,3 +1,7 @@
+AOS.init({
+  duration: 1000,
+});
+
 gsap.to(".jumbotron h2", {
   duration: 2,
   text: "Selamat Datang",

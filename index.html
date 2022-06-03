@@ -10,6 +10,9 @@
     <!-- Web Title -->
     <title>Bryan Kazuro | Biografi</title>
 
+    <!-- AOS Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- CSS File -->
     <link rel="stylesheet" href="./style/main.css" />
   </head>
@@ -38,7 +41,7 @@
       <section class="jumbotron">
         <h2></h2>
 
-        <div class="about">
+        <div class="about" data-aos="fade-right">
           <h3>Perkenalkan</h3>
           <p>
             Halo. Saya Muhammad Alana Fauzan. Saat ini saya sedang menempuh pendidikan perkuliahan. Saya berumur 20 tahun. Di sini saya
@@ -46,7 +49,7 @@
           </p>
         </div>
 
-        <div class="pict">
+        <div class="pict" data-aos="fade-left">
           <img src="./media/Al.png" alt="Foto diri" />
         </div>
       </section>
@@ -54,7 +57,7 @@
 
       <!-- Main Content -->
       <section class="container">
-        <div class="content">
+        <div class="content" data-aos="fade-up">
           <h2>My Self</h2>
 
           <p>
@@ -70,7 +73,7 @@
 
         <div class="content ringkas">
           <!-- Study -->
-          <div class="study">
+          <div class="study" data-aos="flip-left">
             <h2>Riwayat pendidikan</h2>
             <div>
               <h4>
@@ -101,7 +104,7 @@
           <!-- Study End -->
 
           <!-- Table -->
-          <div class="content-table">
+          <div class="content-table" data-aos="flip-right">
             <h2>Ringkasan</h2>
             <table border="0">
               <tr>
@@ -143,12 +146,12 @@
 
     <!-- Music Player -->
     <section class="music-box">
-      <audio src="./media/Calmy.wav" autoplay loop></audio>
+      <audio src="./media/Calmy.wav" controls autoplay="true" loop></audio>
     </section>
     <!-- Music Player End -->
 
     <!-- Footer -->
-    <footer>
+    <footer data-aos="zoom-in-up" data-aos-duration="500">
       <h3>Kamu bisa mengunjungi media sosial saya</h3>
 
       <div class="icon">
@@ -178,6 +181,7 @@
     </footer>
     <!-- Footer End -->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a1cf9facd4.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>

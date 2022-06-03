@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Andada+Pro:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 @import url(./animation.css);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -17,7 +19,7 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 15px;
-  background-color: antiquewhite;
+  background-color: rgb(251, 252, 168);
 }
 
 body {
@@ -57,15 +59,13 @@ a {
 }
 
 nav {
-  padding: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  padding: 1em 5em;
   font-size: 1.25rem;
 }
 
 .brand {
-  font-family: "Style Script", cursive;
+  font-size: 1.7em;
+  font-family: "Dancing Script", cursive;
 }
 
 main {
@@ -165,6 +165,10 @@ main {
 .content-table th {
   padding-right: 10px;
   text-align: start;
+}
+
+.music-box {
+  display: none;
 }
 
 footer {
