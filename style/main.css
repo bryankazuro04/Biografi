@@ -23,6 +23,8 @@
 body {
   font-size: 20px;
   font-family: "Andada Pro", serif;
+  background-color: #eee;
+  background: url(../media/66.\ Yellow\ sand.png) no-repeat;
 }
 
 a {
@@ -30,10 +32,27 @@ a {
   cursor: pointer;
 }
 
+.secret {
+  all: unset;
+  color: rgba(0, 0, 0, 0.05);
+}
+
+.secret:hover {
+  color: red;
+}
+
+.secret_message {
+  display: none;
+}
+
+.visible {
+  display: inline;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
-  background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(0deg, transparent, rgba(240, 229, 80, 0.4) 90%);
   z-index: 99;
 }
 
@@ -50,21 +69,31 @@ nav {
 }
 
 main {
-  padding-top: 7%;
+  padding: 0 15rem;
   height: fit-content;
 }
 
 .jumbotron {
-  padding: 0 15rem;
-  /* background-color: rgba(0, 0, 0, 0.3); */
-  /* background: url(../media/blob-scene-haikei.svg) no-repeat; */
-  /* background-size: 50%; */
-  background: linear-gradient(70deg, #fff, #000);
+  background-size: cover;
   display: grid;
   justify-content: center;
   justify-items: center;
   grid-template-columns: 50% 50%;
   gap: 2rem;
+  position: relative;
+}
+
+.container__diagonal {
+  border-radius: 40px 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: 110px;
+  left: 0px;
+  height: 70%;
+  width: 100%;
+  transform: skewY(-3deg);
+  box-shadow: -14px 14px 20px rgba(0, 0, 0, 0.05), 14px -14px 20px rgba(0, 0, 0, 0.05);
+  z-index: -1;
 }
 
 .jumbotron h2 {
@@ -74,7 +103,7 @@ main {
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: center;
-  animation: shadow 1.7s ease-in-out infinite alternate;
+  animation: shadow 3s ease-in-out infinite alternate-reverse;
 }
 
 .about h3 {
@@ -91,37 +120,74 @@ main {
   border-radius: 100%;
   width: 250px;
   height: 250px;
-  object-fit: cover;
+  background: url(../media/low-poly-grid-haikei.svg);
+  background-size: cover;
 }
 
-.pendidikan {
-  padding: 2em 7em;
-  background-color: #bbb;
+.container {
+  padding-top: 2em;
 }
 
-.pendidikan h2 {
+.container h2 {
   margin-bottom: 1em;
+  font-size: 1.7em;
   text-align: center;
+}
+
+.container p {
+  text-align: justify;
+}
+
+.content {
+  margin: 3em 0;
+}
+
+.content h5 {
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.ringkas {
+  display: flex;
+}
+
+.study {
+  width: 50%;
+  display: inherit;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-table {
+  width: 50%;
+}
+
+.content-table th {
+  padding-right: 10px;
+  text-align: start;
 }
 
 footer {
   padding: 0.5em;
+  border-top-left-radius: 20%;
+  border-top-right-radius: calc(40% * 1px);
   position: relative;
-  background-color: aqua;
+  background-color: moccasin;
   text-align: center;
+  color: rgba(0, 0, 0, 0.55);
 }
 
 footer h3 {
   margin-top: 0.5em;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .icon {
   margin: 2em 0;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  font-size: 1em;
+  justify-content: center;
+  gap: 50px;
   color: #fff;
 }
 

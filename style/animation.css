@@ -3,8 +3,8 @@
     color: #000;
   }
   100% {
-    color: #fff;
-    text-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+    color: #eee;
+    text-shadow: 0 0 10px #bbb, 0 0 20px #bbb, 0 0 40px #bbb;
   }
 }
 

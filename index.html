@@ -25,8 +25,20 @@
       </nav>
     </header>
 
+    <!-- Waves SVG -->
+    <svg id="visual" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      <path
+        d="M0 83L17.2 82.2C34.3 81.3 68.7 79.7 103 75.3C137.3 71 171.7 64 206 62.5C240.3 61 274.7 65 308.8 71.3C343 77.7 377 86.3 411.2 79.5C445.3 72.7 479.7 50.3 514 49.8C548.3 49.3 582.7 70.7 617 74.8C651.3 79 685.7 66 720 66.3C754.3 66.7 788.7 80.3 823 82.5C857.3 84.7 891.7 75.3 926 69.5C960.3 63.7 994.7 61.3 1028.8 58C1063 54.7 1097 50.3 1131.2 53.3C1165.3 56.3 1199.7 66.7 1234 73.7C1268.3 80.7 1302.7 84.3 1337 77.2C1371.3 70 1405.7 52 1422.8 43L1440 34L1440 0L1422.8 0C1405.7 0 1371.3 0 1337 0C1302.7 0 1268.3 0 1234 0C1199.7 0 1165.3 0 1131.2 0C1097 0 1063 0 1028.8 0C994.7 0 960.3 0 926 0C891.7 0 857.3 0 823 0C788.7 0 754.3 0 720 0C685.7 0 651.3 0 617 0C582.7 0 548.3 0 514 0C479.7 0 445.3 0 411.2 0C377 0 343 0 308.8 0C274.7 0 240.3 0 206 0C171.7 0 137.3 0 103 0C68.7 0 34.3 0 17.2 0L0 0Z"
+        fill="#ffffff"
+        stroke-linecap="round"
+        stroke-linejoin="miter"
+      ></path>
+    </svg>
+    <!-- Waves SVG End -->
+
     <main>
       <!-- Jumbotron -->
+      <div class="container__diagonal"></div>
       <section class="jumbotron">
         <h2></h2>
 
@@ -39,18 +51,98 @@
         </div>
 
         <div class="pict">
-          <img src="./media/1221844.jpg" alt="Foto diri" />
+          <img src="./media/Al.png" alt="Foto diri" />
         </div>
       </section>
       <!-- Jumbotron End -->
 
-      <!-- Education -->
-      <section class="pendidikan">
-        <h2>Riwayat pendidikan</h2>
+      <!-- Main Content -->
+      <section class="container">
+        <div class="content">
+          <h2>My Self</h2>
 
-        <h3>SD Muhammadiyah 04 Belawan</h3>
+          <p>
+            Saya lahir pada 04 Juli 2001 di Medan. Walau saya lahir di Medan, tetapi saya bersuku Minang. Saya anak pertama dari 4 bersaudara
+            dan satu-satunya anak laki-laki. Hobi saya saat ini
+            <strike>bermain game (tidak lagi)</strike> belajar membuat musik dan belajar pemrograman. Saya mulai menyukai
+            pemrograman dan mulai mengenal dunia IT ketika teman saya dulu mengajak saya masuk ke jurusan TKJ.
+
+            <button class="secret">Show</button>
+            <span class="secret_message">My Nickname Bryan Kazuro.</span>
+          </p>
+        </div>
+
+        <div class="content ringkas">
+          <!-- Study -->
+          <div class="study">
+            <h2>Riwayat pendidikan</h2>
+            <div>
+              <h4>
+                <i class="fa-solid fa-school"></i> SD Muhammadiyah 04 Belawan
+              </h4>
+              <h5><i class="fa-solid fa-calendar-days"></i> 2007 - 2013</h5>
+            </div>
+
+            <div>
+              <h4><i class="fa-solid fa-school"></i> SMP Negeri 5 Medan</h4>
+              <h5><i class="fa-solid fa-calendar-days"></i> 2013 - 2016</h5>
+            </div>
+
+            <div>
+              <h4>
+                <i class="fa-solid fa-school"></i> SMK Bina Mandiri Bekasi
+              </h4>
+              <h5><i class="fa-solid fa-calendar-days"></i> 2016 - 2019</h5>
+            </div>
+
+            <div>
+              <h4>
+                <i class="fa-solid fa-school"></i> Universitas Malikussaleh
+              </h4>
+              <h5><i class="fa-solid fa-calendar-days"></i> 2019 - sekarang</h5>
+            </div>
+          </div>
+          <!-- Study End -->
+
+          <!-- Table -->
+          <div class="content-table">
+            <h2>Ringkasan</h2>
+            <table border="0">
+              <tr>
+                <th height="50">Nama</th>
+                <td>:</td>
+                <td>Muhammad Alana Fauzan</td>
+              </tr>
+
+              <tr>
+                <th height="50">Nickname</th>
+                <td>:</td>
+                <td>Bryan Kazuro</td>
+              </tr>
+
+              <tr>
+                <th height="50">Lahir</th>
+                <td>:</td>
+                <td>04 Juli 2001</td>
+              </tr>
+
+              <tr>
+                <th height="50">Skill</th>
+                <td>:</td>
+                <td>HTML, CSS, JS, PHP</td>
+              </tr>
+
+              <tr>
+                <th height="50">Hobi</th>
+                <td>:</td>
+                <td>Membuat musik, ngoding</td>
+              </tr>
+            </table>
+          </div>
+          <!-- Table End -->
+        </div>
       </section>
-      <!-- Education End -->
+      <!-- Main Content End -->
     </main>
 
     <!-- Music Player -->
@@ -61,26 +153,26 @@
 
     <!-- Footer -->
     <footer>
-      <h3>You can find me in</h3>
+      <h3>Kamu bisa mengunjungi media sosial saya</h3>
 
       <div class="icon">
-        <a href="https://github.com/bryankazuro04/">
+        <a href="https://github.com/bryankazuro04/" target="_blank " rel="noreferrer">
           <i class="fa-brands fa-github"></i>
           <p>Github</p>
         </a>
-        <a href="https://www.linkedin.com/in/muhammad-alana-fauzan-34b72b220/">
+        <a href="https://www.linkedin.com/in/muhammad-alana-fauzan-34b72b220/" target="_blank " rel="noreferrer">
           <i class="fa-brands fa-linkedin"></i>
           <p>LinkedIn</p>
         </a>
-        <a href="mailto:mhdalana211201@gmail.com">
+        <a href="mailto:mhdalana211201@gmail.com" target="_blank " rel="noreferrer">
           <i class="fa-solid fa-envelope"></i>
           <p>E-Mail</p>
         </a>
-        <a href="https://wa.me/+6282119760841/?text=Hi, Nice to Meet You">
+        <a href="https://wa.me/+6282119760841/?text=Hi, Nice to Meet You" target="_blank " rel="noreferrer">
           <i class="fa-brands fa-whatsapp"></i>
           <p>WhatsApp</p>
         </a>
-        <a href="https://www.instagram.com/bryan.kazuro/">
+        <a href="https://www.instagram.com/bryan.kazuro/" target="_blank " rel="noreferrer">
           <i class="fa-brands fa-instagram"></i>
           <p>Instagram</p>
         </a>
@@ -90,20 +182,10 @@
     </footer>
     <!-- Footer End -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://kit.fontawesome.com/a1cf9facd4.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
     <script src="./app.js"></script>
-    <script>
-      gsap.to(".jumbotron h2", {
-        duration: 2,
-        text: "Selamat Datang",
-        ease: "none",
-      });
-
-    </script>
   </body>
 
 </html>

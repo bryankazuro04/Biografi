@@ -1,11 +1,12 @@
-// gsap.to(".jumbotron h1", {
-//   duration: 0.7,
-//   text: "Selamat Datang",
-//   ease: "none",
-// });
+gsap.to(".jumbotron h2", {
+  duration: 2,
+  text: "Selamat Datang",
+  ease: "none",
+});
 
-// const navItem = document.querySelector('.item-nav')
+const btnSecret = document.querySelector(".secret");
+const msgSecret = document.querySelector(".secret_message");
 
-// navItem.addEventListener('click', () => {
-
-// })
+btnSecret.addEventListener("click", () => {
+  msgSecret.classList.toggle("visible");
+});
