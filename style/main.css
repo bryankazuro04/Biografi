@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Andada+Pro:ital@1&display=swap");
+@import url(./animation.css);
 * {
   margin: 0;
   padding: 0;
@@ -55,10 +56,12 @@ main {
 
 .jumbotron {
   padding: 0 15rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  /* background: url(../media/blob-scene-haikei.svg) no-repeat; */
+  /* background-size: 50%; */
+  background: linear-gradient(70deg, #fff, #000);
   display: grid;
   justify-content: center;
-  align-items: center;
   justify-items: center;
   grid-template-columns: 50% 50%;
   gap: 2rem;
@@ -71,11 +74,12 @@ main {
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: center;
+  animation: shadow 1.7s ease-in-out infinite alternate;
 }
 
-.jumbotron h2:hover {
-  color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+.about h3 {
+  margin: 1em 0;
+  font-size: 1.3em;
 }
 
 .about,
@@ -88,4 +92,50 @@ main {
   width: 250px;
   height: 250px;
   object-fit: cover;
+}
+
+.pendidikan {
+  padding: 2em 7em;
+  background-color: #bbb;
+}
+
+.pendidikan h2 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+footer {
+  padding: 0.5em;
+  position: relative;
+  background-color: aqua;
+  text-align: center;
+}
+
+footer h3 {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+}
+
+.icon {
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1em;
+  color: #fff;
+}
+
+.icon a {
+  font-size: 1.1em;
+  animation: first_color 1.5s ease-in-out infinite alternate;
+}
+
+.icon p {
+  margin-top: 10px;
+}
+
+footer>p {
+  margin-bottom: 0;
+  font-size: 0.9em;
+  font-weight: bold;
 }

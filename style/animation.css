@@ -1,0 +1,100 @@
+@keyframes shadow {
+  0% {
+    color: #000;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+  }
+}
+
+.icon a:nth-child(1):hover {
+  color: #6e6667;
+  animation: unset;
+  transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.icon a:nth-child(2) {
+  animation-name: second_color;
+}
+
+.icon a:nth-child(2):hover {
+  color: #3667c2;
+  animation: unset;
+  transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.icon a:nth-child(3) {
+  animation-name: third_color;
+}
+
+.icon a:nth-child(3):hover {
+  color: #cf2f3a;
+  animation: unset;
+  transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.icon a:nth-child(4) {
+  animation-name: fourth_color;
+}
+
+.icon a:nth-child(4):hover {
+  color: #4ac959;
+  animation: unset;
+  transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.icon a:nth-child(5) {
+  animation-name: fifth_color;
+}
+
+.icon a:nth-child(5):hover {
+  color: #be0aff;
+  animation: unset;
+  transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+@keyframes first_color {
+  0% {
+    text-shadow: 0 0 10px #6e6667, 0 0 20px #6e6667, 0 0 30px #6e6667;
+  }
+  100% {
+    text-shadow: 0 0 5px #6e6667, 0 0 10px #6e6667, 0 0 15px #6e6667;
+  }
+}
+
+@keyframes second_color {
+  0% {
+    text-shadow: 0 0 10px #3667c2, 0 0 20px #3667c2, 0 0 30px #3667c2;
+  }
+  100% {
+    text-shadow: 0 0 5px #3667c2, 0 0 10px #3667c2, 0 0 15px #3667c2;
+  }
+}
+
+@keyframes third_color {
+  0% {
+    text-shadow: 0 0 10px #ff1122, 0 0 20px #ff1122, 0 0 30px #ff1122;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff1122, 0 0 10px #ff1122, 0 0 15px #ff1122;
+  }
+}
+
+@keyframes fourth_color {
+  0% {
+    text-shadow: 0 0 10px #4ac959, 0 0 20px #4ac959, 0 0 30px #4ac959;
+  }
+  100% {
+    text-shadow: 0 0 5px #4ac959, 0 0 10px #4ac959, 0 0 15px #4ac959;
+  }
+}
+
+@keyframes fifth_color {
+  0% {
+    text-shadow: 0 0 10px #be0aff, 0 0 20px #be0aff, 0 0 30px #be0aff;
+  }
+  100% {
+    text-shadow: 0 0 5px #be0aff, 0 0 10px #be0aff, 0 0 15px #be0aff;
+  }
+}

@@ -27,34 +27,78 @@
 
     <main>
       <!-- Jumbotron -->
-      <header class="jumbotron">
-        <h2>Selamat Datang</h2>
+      <section class="jumbotron">
+        <h2></h2>
 
         <div class="about">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt quo nobis nesciunt, ducimus fugiat error impedit earum
-          libero eos, reiciendis sed a? Tenetur maxime delectus facere nisi recusandae, sequi unde commodi illum id a veritatis
-          eius saepe amet repellendus illo debitis, totam rem quod. Porro aliquam totam harum minima eius.
+          <h3>Perkenalkan</h3>
+          <p>
+            Halo. Saya Muhammad Alana Fauzan. Saat ini saya sedang menempuh pendidikan perkuliahan. Saya berumur 20 tahun. Di sini saya
+            akan sedikit memberitahu tentang diri saya.
+          </p>
         </div>
 
         <div class="pict">
           <img src="./media/1221844.jpg" alt="Foto diri" />
         </div>
-      </header>
+      </section>
       <!-- Jumbotron End -->
 
       <!-- Education -->
-      <!-- <section>
-        <h2>Education</h2>
-      </section> -->
+      <section class="pendidikan">
+        <h2>Riwayat pendidikan</h2>
+
+        <h3>SD Muhammadiyah 04 Belawan</h3>
+      </section>
       <!-- Education End -->
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script>
+    <!-- Music Player -->
+    <section class="music-box">
+      <audio src="./media/Calmy.wav" autoplay loop></audio>
+    </section>
+    <!-- Music Player End -->
+
+    <!-- Footer -->
+    <footer>
+      <h3>You can find me in</h3>
+
+      <div class="icon">
+        <a href="https://github.com/bryankazuro04/">
+          <i class="fa-brands fa-github"></i>
+          <p>Github</p>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-alana-fauzan-34b72b220/">
+          <i class="fa-brands fa-linkedin"></i>
+          <p>LinkedIn</p>
+        </a>
+        <a href="mailto:mhdalana211201@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <p>E-Mail</p>
+        </a>
+        <a href="https://wa.me/+6282119760841/?text=Hi, Nice to Meet You">
+          <i class="fa-brands fa-whatsapp"></i>
+          <p>WhatsApp</p>
+        </a>
+        <a href="https://www.instagram.com/bryan.kazuro/">
+          <i class="fa-brands fa-instagram"></i>
+          <p>Instagram</p>
+        </a>
+      </div>
+
+      <p>2022, Developed by Muhammad Alana Fauzan</p>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/a1cf9facd4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
     <script src="./app.js"></script>
     <script>
-      gsap.to("header h1", {
-        duration: 0.7,
+      gsap.to(".jumbotron h2", {
+        duration: 2,
         text: "Selamat Datang",
         ease: "none",
       });
