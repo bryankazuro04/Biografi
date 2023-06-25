@@ -1,3 +1,10 @@
+$(document).ready(function() {
+  setInterval(function() {
+    $(".loader-wrapper").hide();
+    $(".loader").hide();
+  }, 7000);
+});
+
 AOS.init({
   duration: 1000,
 });
